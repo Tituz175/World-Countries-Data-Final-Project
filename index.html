@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Countries Visualization</title>
+    <title>World Countries Visualization Data Final Project</title>
     <script src="https://kit.fontawesome.com/e2f8082b5f.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
@@ -16,32 +16,34 @@
     <header>
         <h1 id="title">WORLD COUNTRIES DATA</h1>
         <h2 id="subtitle">Currently, we have <span></span> countries</h2>
-        <i id="response"> <span></span> country satisified the search criteria</i>
+        <i id="response"></i>
         <div id="input-container">
             <span><input type="text" name="" id="" value=""
                     placeholder="Search countries by name, city and languages"></span>
         </div>
         <div id="button-container">
-            <button>name <span style="font-size: 1rem;">&darr;</span></button>
-            <button>capital</button>
-            <button>population</button>
-            <button>
-                <i class="fas fa-chart-bar"></i>
+            <button class="name" type="">name <i style="display: inline-block;">&darr;</i></button>
+            <button class="capital" type="">capital <i>&darr;</i></button>
+            <button class="population" type="">population <i>&darr;</i></button>
+            <button class="graph-button">
+                <a href="#graph"><i class="fas fa-chart-bar"></i></a>
             </button>
         </div>
     </header>
     <main>
         <div id="country-container">
-            <div class="country">
-                <div class="country_flag">
-                    <img src="https://flagcdn.com/zm.svg" />
-                </div>
-                <h3 class="country_name"></h3>
-                <div class="country_text">
-                    <p></p>
-                    <p><span></span></p>
-                    <p><span></span></p>
-                </div>
+
+        </div>
+        <div id="graph-container">
+            <div id="graph-buttons">
+                <button>population</button>
+                <button>languages</button>
+            </div>
+            <p id="graph-feedback">
+                10 Most populated countries in the world
+            </p>
+            <div id="graph">
+
             </div>
 
         </div>
